@@ -1,24 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import { Container } from '@mui/material';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import QuestionBox from './components/questionBox/QuestionBox'
+
+const theme = createTheme({
+  typography: {
+    fontFamily: 'Hi Melody'
+  },
+  palette: {
+    primary: {
+      main: "#FCCEE2",
+      contrastText: "white"
+    }
+  }
+});
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Container component="main" maxWidth="sm">
+        <QuestionBox />
+      </Container>
+    </ThemeProvider>
   );
 }
 
