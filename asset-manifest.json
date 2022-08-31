@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/SuminQuiz/static/css/main.fa1dddf6.css",
+    "main.js": "/SuminQuiz/static/js/main.01d01435.js",
+    "static/js/787.8d02f5bd.chunk.js": "/SuminQuiz/static/js/787.8d02f5bd.chunk.js",
+    "index.html": "/SuminQuiz/index.html",
+    "main.fa1dddf6.css.map": "/SuminQuiz/static/css/main.fa1dddf6.css.map",
+    "main.01d01435.js.map": "/SuminQuiz/static/js/main.01d01435.js.map",
+    "787.8d02f5bd.chunk.js.map": "/SuminQuiz/static/js/787.8d02f5bd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fa1dddf6.css",
+    "static/js/main.01d01435.js"
+  ]
+}
