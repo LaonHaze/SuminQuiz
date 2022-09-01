@@ -21,7 +21,7 @@ const Question = ({ questionNo, questionText }) => {
                             caretColor: '#ffafd8',
                             width: 30,
                             height: 15,
-                            borderColor: '#ffafd8 !important'
+                            border: '1.5px solid #FCCEE2'
                         }
                     }}
                     variant="outlined" 
@@ -39,7 +39,8 @@ const Question = ({ questionNo, questionText }) => {
                             fontSize: 40,
                             caretColor: '#ffafd8',
                             width: 30,
-                            height: 15
+                            height: 15,
+                            border: '1.5px solid #FCCEE2'
                         }
                     }}
                     variant="outlined" 
