@@ -1,6 +1,27 @@
-import { Box, Card, CardContent, Typography, Button } from '@mui/material';
+import { Box, Card, CardContent } from '@mui/material';
+import Intro from '../intro/Intro';
+import Question from '../question/Question';
+import React, { useState } from 'react';
 
-function QuestionBox() {
+
+
+const QuestionBox = () => {
+  const [level, setLevel] = useState(0);
+
+  const GetContent = () => {
+    
+    console.log(level);
+    if (level === 0) {
+      return <Intro days={100} onSubmit={setLevel}/> 
+    }
+    else {
+      return <Question 
+      questionNo={level} 
+      questionText="우리가 사귀기 시작한 날은?" 
+    />
+    }
+  }
+
   return (
     <Box 
       sx={{
@@ -15,19 +36,11 @@ function QuestionBox() {
         sx={{ 
           minWidth: 275,
           border: "1px solid #FCCEE2",
-          boxShadow: "0px 0px black"
+          boxShadow: "0px 0px black",
         }} 
         variant="outlined">
         <CardContent>
-          <Typography sx={{fontSize: 16}}>
-            안녕~ 쟈기!
-          </Typography>
-          <Typography sx={{fontSize: 16}}>
-            쟈기를 위해 질문 몇 개를 준비했어. 기억을 떠올리며 잘 풀어봐~
-          </Typography>
-          <Box textAlign="center">
-            <Button sx={{marginTop: "30px", boxShadow: "0px 0px black", fontSize: 18}} variant="contained" color="primary">Go!</Button>
-          </Box>
+          {GetContent()}
         </CardContent>
       </Card>
     </Box>

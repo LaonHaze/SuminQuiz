@@ -1,19 +1,10 @@
 import './App.css';
 import { Container } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import QuestionBox from './components/questionBox/QuestionBox'
+import QuestionBox from './components/questionBox/QuestionBox';
+import defaultTheme from './themes/default';
 
-const theme = createTheme({
-  typography: {
-    fontFamily: 'Hi Melody'
-  },
-  palette: {
-    primary: {
-      main: "#FCCEE2",
-      contrastText: "white"
-    }
-  }
-});
+const theme = createTheme(defaultTheme);
 
 function App() {
   return (
