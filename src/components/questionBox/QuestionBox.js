@@ -9,8 +9,6 @@ const QuestionBox = () => {
   const [level, setLevel] = useState(0);
 
   const GetContent = () => {
-    
-    console.log(level);
     if (level === 0) {
       return <Intro days={100} onSubmit={setLevel}/> 
     }
@@ -29,7 +27,9 @@ const QuestionBox = () => {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        backgroundColor: 'white'
+        backgroundColor: 'white',
+        justifyContent: 'center',
+        minHeight: '80vh',
       }}
     >
       <Card 
@@ -37,6 +37,7 @@ const QuestionBox = () => {
           minWidth: 275,
           border: "1px solid #FCCEE2",
           boxShadow: "0px 0px black",
+          padding: "2rem"
         }} 
         variant="outlined">
         <CardContent>
