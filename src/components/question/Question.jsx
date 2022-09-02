@@ -1,9 +1,9 @@
 import { Box, Typography, Button, Grow } from '@mui/material';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import AnswerInput from '../answer/AnswerInput';
 
-const Question = ({ questionNo, questionText, checkAnswer }) => {
+const Question = ({ questionNo, questionText, hintText, checkAnswer, answerType, answerSetting }) => {
     const [answerValues, setAnswerValues] = useState({});
 
     return (
@@ -12,12 +12,24 @@ const Question = ({ questionNo, questionText, checkAnswer }) => {
                 <Typography variant="body1">
                     Q{questionNo}. {questionText}
                 </Typography>
+                {
+                    hintText ?
+                    <Box textAlign="center">
+                        <Typography variant="body1">
+                            {hintText}
+                        </Typography>
+                    </Box>
+                    :
+                    null
+                }                
                 <Box sx={{paddingTop: "20px"}} display="flex" justifyContent='center'>         
                     <AnswerInput 
                         answerValue={answerValues} 
                         setAnswer={(key, value) => {
                                 setAnswerValues({...answerValues, [key]: value})
                             }}
+                        answerType={answerType}
+                        answerSetting={answerSetting}
                     />
                 </Box>
                 <Box textAlign="center">
@@ -38,7 +50,8 @@ const Question = ({ questionNo, questionText, checkAnswer }) => {
 Question.propTypes = {
     questionNo: PropTypes.number,
     questionText: PropTypes.string,
-    checkAnswer: PropTypes.func
+    checkAnswer: PropTypes.func,
+    answerType: PropTypes.string
 }
 
 export default Question;

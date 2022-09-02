@@ -15,23 +15,22 @@ const End = ({ onSubmit }) => {
         <Box sx={{marginTop: "20px"}} textAlign="center">
             <Card 
                 sx={{ 
-                    minWidth: "55%",
                     border: "1px solid #FCCEE2",
                     boxShadow: "0px 0px black",
-                    padding: "2rem",
-                    backgroundColor: "#FCCEE2"
+                    padding: "0.5rem",
+                    backgroundColor: "#FCCEE2",
                 }} 
-            variant="outlined">
-            <CardContent>
-                <Typography variant="body3">
-                    소원권 1회<br /><br />
-                </Typography>
-                <Typography sx={{marginTop: "20px"}} variant="body4">
-                    재영이의 능력으로 이룰수 있는 소원을 언제든 한번! 이루어준다 <br /><br />
-                    주의사항: 하수민이 반재영에게만 사용 가능!
-                </Typography>
-            </CardContent>
-        </Card>
+                variant="outlined">
+                <CardContent>
+                    <Typography variant="body3">
+                        소원권 1회<br /><br />
+                    </Typography>
+                    <Typography sx={{marginTop: "20px"}} variant="body4">
+                        재영이의 능력으로 이룰수 있는 소원을<br /> 언제든 한번! 이루어준다 <br /><br />
+                        주의사항:<br /> 하수민이 반재영에게만 사용 가능!
+                    </Typography>
+                </CardContent>
+            </Card>
         </Box>
         <Box textAlign="center">
             <Button 

@@ -22,7 +22,8 @@ const QuestionBox = () => {
           minWidth: "55%",
           border: "1px solid #FCCEE2",
           boxShadow: "0px 0px black",
-          padding: "2rem"
+          padding: "2rem",
+          maxWidth: "65%"
         }} 
         variant="outlined">
         <CardContent>
@@ -34,7 +35,7 @@ const QuestionBox = () => {
 }
 
 QuestionBox.propTypes = {
-  
+
 }
 
 export default QuestionBox;
