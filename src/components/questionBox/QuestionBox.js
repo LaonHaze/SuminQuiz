@@ -34,7 +34,7 @@ const QuestionBox = () => {
     >
       <Card 
         sx={{ 
-          minWidth: 275,
+          minWidth: "55%",
           border: "1px solid #FCCEE2",
           boxShadow: "0px 0px black",
           padding: "2rem"

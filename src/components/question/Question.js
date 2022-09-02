@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
 const Question = ({ questionNo, questionText }) => {
-    const [month, setMonth] = useState(1);
-    const [day, setDay] = useState(1);
+    const [month, setMonth] = useState();
+    const [day, setDay] = useState();
 
     const validateMonths = (e) => {
         const value = e.target.value;

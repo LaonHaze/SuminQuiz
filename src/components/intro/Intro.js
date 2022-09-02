@@ -6,19 +6,17 @@ const Intro = ({ days, onSubmit }) => {
   return (
     <React.Fragment>
         <Typography variant="body1">
-            안녕~ 쟈기!
-        </Typography>
-        <Typography variant="body1">
+            안녕~ 쟈기! 
+            <br />
             {days}일 기념 퀴즈를 준비해봤어
-        </Typography>
-        <Typography variant="body1">
+            <br />
             쟈기가 이런거 약할거 같긴하던데 ㅎㅎ
-        </Typography>
-        <Typography variant="body1">
+            <br />
             그래서 최대한 쉬운걸로 춘비했어!
-        </Typography>
-        <Typography variant="body1">
+            <br />
             기억을 떠올리며 잘 풀어봐~
+            <br />
+            화이팅!
         </Typography>
         <Box textAlign="center">
             <Button 
