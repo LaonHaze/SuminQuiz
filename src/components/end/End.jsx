@@ -8,10 +8,21 @@ const End = ({ onSubmit }) => {
         <Typography variant="body1">
             쟈기가 해낼줄 알았어!
             <br />
-            사실 뭐 딱히 준비해 놓은건 없고 ㅎㅎ
+            사실 뭐 딱히 준비해 놓은건 없어 ㅎㅎ
             <br />
             여기~ 저장해둬 ㅋㅋㅋ
         </Typography>
+        <Box textAlign="center">
+            <Box
+                component="img"
+                sx={{
+                    width: "60%",
+                    opacity: 1
+                }}
+                alt="flowers"
+                src="https://cdn.shopify.com/s/files/1/0591/1452/0785/products/luxe-rose-fresh-roses-in-a-vase-100-light-pink-roses-roses-29180227846353_300x.jpg?v=1634956937"
+            />
+        </Box>
         <Box sx={{marginTop: "20px"}} textAlign="center">
             <Card 
                 sx={{ 

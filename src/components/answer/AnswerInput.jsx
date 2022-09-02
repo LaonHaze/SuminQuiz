@@ -12,7 +12,7 @@ const AnswerInput = ({answerValue, setAnswer, answerType, answerSetting}) => {
             case "date":
                 return <DateInput answerValue={answerValue} setAnswer={setAnswer}/>
             case "text":
-                return <TextInput answerValue={answerValue} setAnswer={setAnswer} />
+                return <TextInput answerValue={answerValue} setAnswer={setAnswer} answerSetting={answerSetting}/>
             case "singleText":
                 return <SingleTextInput answerValue={answerValue} setAnswer={setAnswer} answerSetting={answerSetting}/>
             default:

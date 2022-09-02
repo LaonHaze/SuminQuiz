@@ -6,6 +6,19 @@ import NumberInput from './NumberInput';
 const SingleTextInput = ({answerValue, setAnswer, answerSetting}) => {
     const validateText = (e) => {
         const value = e.target.value;
+
+        const englishCheck = new RegExp("^[a-zA-Z0-9]*$");
+        const koreanCheck = new RegExp("^[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]*$");
+        
+        if (answerSetting.englishOnly && !englishCheck.test(value)) {
+            setAnswer("text", answerValue.text)
+            return;
+        }
+
+        if (answerSetting.koreanOnly && !koreanCheck.test(value)) {
+            setAnswer("text", answerValue.text)
+            return;
+        }
         
         value.length <= answerSetting.maxLength ? setAnswer("text", value) : setAnswer("text", answerValue.text);
     }
