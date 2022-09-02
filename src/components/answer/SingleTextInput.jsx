@@ -8,7 +8,7 @@ const SingleTextInput = ({answerValue, setAnswer, answerSetting}) => {
         if(answerSetting.presetAnswer) {
             setAnswer("text", answerSetting.presetAnswer)
         }
-    }, [answerSetting.presetAnswer, setAnswer]);
+    }, []);
 
     const validateText = (e) => {
         const value = e.target.value;

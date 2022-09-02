@@ -82,7 +82,6 @@ const QuestionContent = ({level, setLevel, setProgress}) => {
             questionText="우리가 처음 같이 여행 갔던 곳은?"
             hintText="(영어로 6글자 P로 시작!)"
             checkAnswer={(a, wrongHandler) => {
-                console.log(a);
                 if (a.text && a.text.toLowerCase() === "paihia")
                 {
                     nextLevel();

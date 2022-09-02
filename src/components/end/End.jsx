@@ -12,7 +12,7 @@ const End = ({ onSubmit }) => {
             <br />
             그래두 100일이다 드디어!
             <br />
-            앞으로도 우리 에쁜사랑하자~
+            앞으로도 우리 예쁜사랑하자~
             <br />
             이건 내 선물! 저장해둬 ㅋㅋㅋ 사랑해!
         </Typography>
@@ -29,7 +29,7 @@ const End = ({ onSubmit }) => {
                     <Typography variant="body3">
                         100일 기념 소원권<br /><br />
                     </Typography>
-                    <Typography sx={{marginTop: "20px"}} variant="body4">
+                    <Typography sx={{marginTop: "20px", fontSize: 22}} variant="body4">
                         재영이의 능력으로 이룰수 있는 소원을<br /> 언제든 한번! 이루어준다 <br /><br />
                         주의사항:<br /> 하수민이 반재영에게만 사용 가능!
                     </Typography>
