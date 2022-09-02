@@ -10,19 +10,12 @@ const End = ({ onSubmit }) => {
             <br />
             사실 뭐 딱히 준비해 놓은건 없어 ㅎㅎ
             <br />
-            여기~ 저장해둬 ㅋㅋㅋ
+            그래두 100일이다 드디어!
+            <br />
+            앞으로도 우리 에쁜사랑하자~
+            <br />
+            이건 내 선물! 저장해둬 ㅋㅋㅋ 사랑해!
         </Typography>
-        <Box textAlign="center">
-            <Box
-                component="img"
-                sx={{
-                    width: "60%",
-                    opacity: 1
-                }}
-                alt="flowers"
-                src="https://cdn.shopify.com/s/files/1/0591/1452/0785/products/luxe-rose-fresh-roses-in-a-vase-100-light-pink-roses-roses-29180227846353_300x.jpg?v=1634956937"
-            />
-        </Box>
         <Box sx={{marginTop: "20px"}} textAlign="center">
             <Card 
                 sx={{ 
@@ -34,7 +27,7 @@ const End = ({ onSubmit }) => {
                 variant="outlined">
                 <CardContent>
                     <Typography variant="body3">
-                        소원권 1회<br /><br />
+                        100일 기념 소원권<br /><br />
                     </Typography>
                     <Typography sx={{marginTop: "20px"}} variant="body4">
                         재영이의 능력으로 이룰수 있는 소원을<br /> 언제든 한번! 이루어준다 <br /><br />
@@ -49,7 +42,7 @@ const End = ({ onSubmit }) => {
                 variant="contained" 
                 color="primary" 
                 onClick={() => {
-                    onSubmit(0);
+                    onSubmit();
                 }}
             >
                 다시하기
