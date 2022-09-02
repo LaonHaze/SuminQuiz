@@ -8,6 +8,14 @@ const defaultTheme = {
         body2: {
             fontSize: 35,
             color: "#ffafd8"
+        },
+        body3: {
+            fontSize: 35,
+            color: "white"
+        },
+        body4: {
+            fontSize: 18,
+            color: "white"
         }
     },
     palette: {

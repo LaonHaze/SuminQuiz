@@ -1,24 +1,9 @@
 import { Box, Card, CardContent } from '@mui/material';
-import Intro from '../intro/Intro';
-import Question from '../question/Question';
 import React, { useState } from 'react';
-
-
+import QuestionContent from './QuestionContent';
 
 const QuestionBox = () => {
   const [level, setLevel] = useState(0);
-
-  const GetContent = () => {
-    if (level === 0) {
-      return <Intro days={100} onSubmit={setLevel}/> 
-    }
-    else {
-      return <Question 
-      questionNo={level} 
-      questionText="우리가 사귀기 시작한 날은?" 
-    />
-    }
-  }
 
   return (
     <Box 
@@ -41,11 +26,15 @@ const QuestionBox = () => {
         }} 
         variant="outlined">
         <CardContent>
-          {GetContent()}
+          <QuestionContent level={level} setLevel={setLevel}/>
         </CardContent>
       </Card>
     </Box>
   );
+}
+
+QuestionBox.propTypes = {
+  
 }
 
 export default QuestionBox;
